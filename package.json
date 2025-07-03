@@ -16,5 +16,8 @@
     "url": "https://github.com/livrariadalua/bot-whatsapp/issues"
   },
   "homepage": "https://github.com/livrariadalua/bot-whatsapp#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@wppconnect-team/wppconnect": "^1.37.2"
+  }
 }
