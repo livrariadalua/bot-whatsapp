@@ -1,0 +1,14 @@
+const wppconnect = require('@wppconnect-team/wppconnect');
+
+wppconnect.create().then((client) => {
+  client.onMessage((message) => {
+    if (message.body === '1') {
+      client.sendText(message.from, 'Você escolheu a opção 1! Fale com +55 11 99999-0001');
+    } else if (message.body === '2') {
+      client.sendText(message.from, 'Você escolheu a opção 2! Fale com +55 11 98888-0002');
+    } else {
+      client.sendText(message.from, 'Digite 1 para Suporte ou 2 para Vendas.');
+    }
+  });
+});
+
